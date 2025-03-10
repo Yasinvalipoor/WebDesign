@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
     margin-top: 5px;
 }
 
@@ -77,6 +77,10 @@ body {
     font-size: 18px;
     font-weight: 500;
     color: rgb(189, 189, 189);
+}
+
+.social a[href="https://github.com/Yasinvalipoor"]{
+    margin-right: 5px;
 }
 
 /* ----------- Stylish Divider ----------- */
@@ -265,8 +269,8 @@ body {
     }
 
     .social a svg {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
 
