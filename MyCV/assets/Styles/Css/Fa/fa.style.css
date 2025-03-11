@@ -1,0 +1,67 @@
+/* ----------- Skills Sections ----------- */
+
+.skills ul,
+.languages ul,
+.certifications ul {
+    padding-right: 25px;
+}
+
+.skills li,
+.languages li,
+.certifications li {
+    padding-right: 20px;
+}
+
+/* ----------- Language Btn ----------- */
+
+.btn-change-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    background-color: #FFD700 !important;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
+        -4px -4px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-change-lang:hover {
+    background-color: #B8860B;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+        -2px -2px 4px rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+.btn-change-lang svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; 
+}
+
+/* html[lang="fa"] .btn-change-lang {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="en"] .btn-change-lang {
+    direction: ltr;
+    text-align: left;
+} */
+
+/* ----------- Card Header ----------- */
+
+.card__header {
+    background: linear-gradient(to right, #262A49, #3b4270);
+}
+
+.dark-mode .card__header {
+    background: linear-gradient(to right, rgb(158, 150, 136), rgb(255, 255, 255));
+}

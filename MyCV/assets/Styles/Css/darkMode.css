@@ -1,0 +1,245 @@
+/* ------------- Dark mode ------------- */
+
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Card */
+.dark-mode .card {
+    background: #222;
+    box-shadow: 0 0 15px rgba(255, 255, 224, 0.6);
+}
+
+/* Card header */
+.dark-mode .card__header {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(158, 150, 136));
+}
+
+/* Card body */
+.dark-mode .card__body {
+    background-color: #2A2A2A;
+}
+
+/* Text and sections */
+.dark-mode .employment,
+.dark-mode .education,
+.dark-mode .skills,
+.dark-mode .languages,
+.dark-mode .certifications {
+    background: rgba(50, 50, 50, 0.7);
+    box-shadow: -1px 1px 3.5px rgba(255, 255, 255, 1);
+}
+
+/* Titles */
+.dark-mode .employment__title,
+.dark-mode .education__title {
+    color: #ffffff;
+}
+
+.dark-mode .subtitle {
+    color: #696969;
+}
+
+/* Job and education meta */
+.dark-mode .employment__meta,
+.dark-mode .education__meta {
+    color: #bbb;
+}
+
+/* Dividers */
+.dark-mode .styled-divider::before,
+.dark-mode .styled-divider::after {
+    background: linear-gradient(to right, transparent, #8b8b8b, transparent);
+}
+
+.dark-mode .styled-divider span {
+    color: white;
+}
+
+/* Section titles */
+.dark-mode .label__section {
+    /* color: #ddd; */
+    color: rgb(229 214 188 / 80%);
+}
+
+/* Descriptions */
+.dark-mode .content__section {
+    color: #e4e4e4;
+}
+
+/* Skills list */
+.dark-mode .skills li {
+    color: #e4e4e4;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .languages li,
+.dark-mode .certifications li {
+    color: #e4e4e4;
+}
+
+.dark-mode .skills li:last-child {
+    border-bottom: none;
+}
+
+/* Links */
+.dark-mode .card__title,
+.dark-mode .contact,
+.dark-mode .contact a,
+.dark-mode .card__address {
+    color: #3f3f3f;
+}
+
+.dark-mode svg {
+    fill: wheat;
+}
+
+/* ------------- Style for aside.help ------------- */
+
+.help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 50%;
+    cursor: grab;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    user-select: none;
+}
+
+.floating-btn:active {
+    cursor: grabbing;
+}
+
+.help-menu {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: rgba(30, 30, 30, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* In dark mode */
+.dark-mode .help-menu {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Button styles */
+.toggle-theme,
+.btn-download-cv,
+.btn-change-lang {
+    width: 150px;
+    font-size: 14px !important;
+    padding: 10px !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ------------- Theme toggle button ------------- */
+
+.toggle-theme,
+.btn-download-cv {
+    background: linear-gradient(145deg, #2b2b2b, #3d3d3d);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
+        -4px -4px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.toggle-theme:hover,
+.btn-download-cv:hover {
+    background: linear-gradient(145deg, #3d3d3d, #4f4f4f);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+        -2px -2px 4px rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+.toggle-theme:active,
+.btn-download-cv:active,
+.btn-change-lang:active {
+    transform: scale(0.95);
+}
+
+/* When dark mode is active */
+.dark-mode .toggle-theme {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.btn-download-cv {
+    top: 80px;
+    right: 20px;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: white;
+}
+
+.btn-download-cv:hover {
+    background: linear-gradient(145deg, #0056b3, #004494);
+}
+
+/* ------------- Responsive for mobile ------------- */
+
+@media (min-width: 768px) {
+
+    .help {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-btn {
+        top: 60px;
+        right: 40px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .toggle-theme,
+    .btn-download-cv,
+    .btn-change-lang {
+        width: 170px;
+        font-size: 16px !important;
+        padding: 12px !important;
+    }
+}
+
+
+.dark-mode .content__section strong {
+    color: #c0ac7a;
+}
+
+.dark-mode .contact .social svg {
+    fill: #121212;
+}
+
+.dark-mode .certifications li a:last-child {
+    color: #e4e4e4;
+}
